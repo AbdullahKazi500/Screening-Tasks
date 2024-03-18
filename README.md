@@ -19,8 +19,7 @@ Screening Tasks for Quantum open source foundation Cohort 9
 
 - E. Farhi, J. Goldstone, S. Gutmann, J. Lapan, A. Lundgren, and D. Preda, Science 292, 472 (2001).
 .
-- T. Kadowaki and H. Nishimori, Physical Review E 58,
-5355 (1998).
+
 - A. Das and B. K. Chakrabarti, Reviews of Modern
 Physics 80, 1061 (2008).”
 - R. Barends, A. Shabani, L. Lamata, J. Kelly, A. Mezzacapo, U. L. Heras, R. Babbush, A. G. Fowler, B. Campbell, Y. Chen, Z. Chen, B. Chiaro, A. Dunsworth, E. Jeffrey, E. Lucero, A. Megrant, J. Y. Mutus, M. Neeley,
