@@ -8,12 +8,10 @@ Screening Tasks for Quantum open source foundation Cohort 9
 -  [Gate based QAOA](#Gate-based-QAOA)
   - [VQAA](#VQAA)
   - [Bloqade](#Bloqade)
-  - [Other folders](#other-folders)
 - [Results](#results)
 - [References](#references)
 
 
-- 
 
 ## References
 
