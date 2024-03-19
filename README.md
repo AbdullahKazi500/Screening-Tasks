@@ -34,8 +34,8 @@ It generates a random graph using NetworkX. Defines the MIS Pyomo model for the 
 Finally, the find_mis function is called with the list of number of nodes to find the MIS for each graph.
 ![image](https://github.com/AbdullahKazi500/Screening-Tasks/assets/75779966/680d8650-b09e-4920-86da-3cb642fd45ac)
 
-## VQAA
-## Bloqade
+## Pulser
+## Bloqade adiabatic neutral atoms
 ## Results
 
 
