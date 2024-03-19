@@ -12,8 +12,14 @@ Screening Tasks for Quantum open source foundation Cohort 9
 - [References](#references)
 
 ## Task-Description
+An independent set is a set of vertices in a graph such that no two of which are connected by an edge. The problem of finding Maximum Independent Sets (MIS) is NP-hard. In this task, you will solve small instances of the MIS with gate and analog-based quantum computing:
 
+Create 4 graphs with 3, 5, 6, and 7 nodes. You can define the edges as you prefer. For each graph, find the MIS using the following methods: The Gate-Based QAOA
+The Quantum adiabatic algorithm using analog based quantum computing. You can check the documentation in Pulser and Blockade for references. Compared the results
 ## Maximum-Independent-Set-Problem
+a maximal independent set (MIS) or maximal stable set is an independent set that is not a subset of any other independent set. In other words, there is no vertex outside the independent set that may join it because it is maximal with respect to the independent set property.
+The Maximum Independent Set (MIS) problem in graph theory is the task of finding the largest independent set in a graph, where an independent set is a set of vertices such that no two vertices are adjacent. There is currently no known efficient algorithm to find maximum independent sets.
+![MISP](https://github.com/AbdullahKazi500/Screening-Tasks/assets/75779966/d1c42ea9-ae25-4720-97ca-dccb378ec5a6)
 
 ## Gate-based-QAOA
 ## VQAA
