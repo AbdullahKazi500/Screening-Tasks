@@ -6,8 +6,8 @@ Screening Tasks for Quantum open source foundation Cohort 9
 - [Task Description](#Task-Description)
 - [Maximum Independent Set Problem](#Maximum-Independent-Set-Problem)
 -  [Gate based QAOA](#Gate-based-QAOA)
-  - [VQAA](#VQAA)
-  - [Bloqade](#Bloqade)
+  - [Pulser](#Pulser)
+  - [Bloqade adiabatic neutral atoms](#Bloqade-adiabatic-neutral-atoms)
 - [Results](#results)
 - [References](#references)
 
