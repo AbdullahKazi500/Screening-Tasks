@@ -32,6 +32,8 @@ The find_mis function iterates over a list of the number of nodes for each graph
 It generates a random graph using NetworkX. Defines the MIS Pyomo model for the graph. Constructs the QAOA (Quantum Approximate Optimization Algorithm) optimization model using the Classiq library. Sets execution preferences for quantum backend simulation. Executes the quantum program, synthesizes it, and extracts optimization results. Prints the independent set and its size for the graph. Plots the graph with the independent set highlighted in red. List of Number of Nodes: The num_nodes_list contains the number of nodes for each graph.
 
 Finally, the find_mis function is called with the list of number of nodes to find the MIS for each graph.
+![image](https://github.com/AbdullahKazi500/Screening-Tasks/assets/75779966/680d8650-b09e-4920-86da-3cb642fd45ac)
+
 ## VQAA
 ## Bloqade
 ## Results
