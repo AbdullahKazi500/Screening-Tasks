@@ -67,6 +67,7 @@ solve_mis_qaoa_piecewise_constant we use This function to apply the Quantum Appr
 
 solve_mis_qaoa_piecewise_linear function applies QAOA with smoothed piecewise linear pulses to solve the MIS problem. Similar to the previous function, it defines parameters for the pulses, such as the maximum Rabi frequency Ω_max, detuning parameters Δ_start and Δ_end, and the maximum evolution time T_max. It then constructs the pulses, creates the Hamiltonian based on these pulses, simulates the time evolution using the Schrödinger equation, and calculates the average loss function of the resulting register. we performedd an iterative optimization to find the optimal parameters for solving the Maximum Independent Set (MIS) problem using a quantum approach
 ![image](https://github.com/AbdullahKazi500/Screening-Tasks/assets/75779966/d180a774-50ba-43e4-b34c-ac2985618a93)
+![image](https://github.com/AbdullahKazi500/Screening-Tasks/assets/75779966/d42bd24e-3742-47e7-b479-49c769860290)
 
 ## Results
 
