@@ -46,6 +46,8 @@ further we calculate the maximum independent set for each graph using find_max_i
 
 we print the maximum independent set for each graph size.
 We ran into issues while using Pulser from Pasqal and while importing the Solver QAA
+![image](https://github.com/AbdullahKazi500/Screening-Tasks/assets/75779966/0444d8cf-e1d6-4861-9e46-887eaa8b7400)
+
 ## Bloqade adiabatic neutral atoms
 ## Results
 
