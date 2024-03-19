@@ -49,6 +49,23 @@ We ran into issues while using Pulser from Pasqal and while importing the Solver
 ![image](https://github.com/AbdullahKazi500/Screening-Tasks/assets/75779966/0444d8cf-e1d6-4861-9e46-887eaa8b7400)
 
 ## Bloqade adiabatic neutral atoms
+for Solving the MIS Problem we now use Bloqade from Quera
+We install julia through jill and do the necessary imports
+we define four different graphs with a specific number of nodes and edges:
+
+Graph with 3 nodes (graph_3):
+
+This graph consists of 3 nodes labeled 1, 2, and 3. It has two edges: one between nodes 1 and 2, and another between nodes 2 and 3. The variable graph_3 is defined as a list of tuples, where each tuple represents an edge between two nodes. Graph with 5 nodes (graph_5):
+
+This graph consists of 5 nodes labeled 1, 2, 3, 4, and 5. It has five edges connecting various pairs of nodes: (1, 2), (1, 3), (2, 3), (3, 4), and (4, 5). Similar to graph_3, graph_5 is defined as a list of tuples representing the edges. Graph with 6 nodes (graph_6):
+
+This graph consists of 6 nodes labeled 1 through 6. It has six edges connecting different pairs of nodes: (1, 2), (1, 3), (2, 3), (3, 4), (4, 5), and (5, 6). Like the previous graphs, graph_6 is defined as a list of tuples representing the edges between nodes. Graph with 7 nodes (graph_7):
+
+This graph consists of 7 nodes labeled 1 through 7. It has eight edges connecting pairs of nodes: (1, 2), (1, 3), (2, 3), (3, 4), (4, 5), (4, 6), (5, 6), and (6, 7). Similar to the other graphs, graph_7 is defined as a list of tuples representing the edges between nodes. we defin a funchun find_MIS that takes a graph represented as a vector of tuples (Int, Int) where each tuple represents an edge between two nodes. The funchun aims to find the Maximum Independent Set (MIS) of the given graph. solve_mis_adiabatic is used for This function implements the quantum adiabatic approach to solving the MIS problem. Adiabatic quantum computation relies on the adiabatic theorem to gradually evolve the system from an initial Hamiltonian (easy to prepare) to a final Hamiltonian (representing the problem) while maintaining the ground state throughout the process. The function defines parameters for the adiabatic evolution, such as the maximum evolution time T_max, maximum Rabi frequency Ω_max, and detuning parameters Δ_start and Δ_end. It then constructs the Hamiltonian based on these parameters, simulates the time evolution using the Schrödinger equation, and calculates the average loss function of the resulting register.
+
+solve_mis_qaoa_piecewise_constant we use This function to apply the Quantum Approximate Optimization Algorithm (QAOA) with piecewise constant pulses to solve the MIS problem. QAOA is a variational quantum algorithm used for optimization problems. It defines durations for the piecewise constant pulses, creates the Hamiltonian based on these pulses, simulates the time evolution using Krylov evolution, and calculates the average loss function of the resulting register.
+
+solve_mis_qaoa_piecewise_linear function applies QAOA with smoothed piecewise linear pulses to solve the MIS problem. Similar to the previous function, it defines parameters for the pulses, such as the maximum Rabi frequency Ω_max, detuning parameters Δ_start and Δ_end, and the maximum evolution time T_max. It then constructs the pulses, creates the Hamiltonian based on these pulses, simulates the time evolution using the Schrödinger equation, and calculates the average loss function of the resulting register. we performedd an iterative optimization to find the optimal parameters for solving the Maximum Independent Set (MIS) problem using a quantum approach
 ## Results
 
 
