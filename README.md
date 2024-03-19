@@ -35,6 +35,17 @@ Finally, the find_mis function is called with the list of number of nodes to fin
 ![image](https://github.com/AbdullahKazi500/Screening-Tasks/assets/75779966/680d8650-b09e-4920-86da-3cb642fd45ac)
 
 ## Pulser
+We defined the functions to find the maximum independent set (MIS) of graphs. The code creates graphs with 3, 5, 6, and 7 nodes. For each graph size, a random adjacency matrix is generated using np.random.randint(0, 2, size=(num_nodes, num_nodes)). This matrix is then made symmetric by adding its transpose to itself (excluding the diagonal) to ensure that the graph is undirected.
+
+The cost_function calculates the cost of a given state (a potential independent set) based on the adjacency matrix. It computes the sum of the weights of the edges connecting vertices in the set. Higher weights indicate fewer edges between vertices, favoring independent sets.
+
+ The objective_function is the function to minimize, which is the negative of the cost function. Minimizing the negative of the cost function is equivalent to maximizing the cost function itself.
+The find_max_independent_set function takes an adjacency matrix as input and returns the maximum independent set. It initializes a random initial state, normalizes it, and uses the minimize function from scipy.optimize to minimize the objective function subject to the constraint that the norm of the state vector is 1.
+
+further we calculate the maximum independent set for each graph using find_max_independent_set, and store the result in the max_independent_sets dictionary.
+
+we print the maximum independent set for each graph size.
+We ran into issues while using Pulser from Pasqal and while importing the Solver QAA
 ## Bloqade adiabatic neutral atoms
 ## Results
 
