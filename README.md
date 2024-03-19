@@ -3,7 +3,7 @@ Screening Tasks for Quantum open source foundation Cohort 9
 # Task 3 & 4
 
 ## Table of Contents
-- [Introduction](#introduction)
+- [Task Description](#Task-Description)
 - [Maximum Independent Set Problem](#Maximum-Independent-Set-Problem)
 -  [Gate based QAOA](#Gate-based-QAOA)
   - [VQAA](#VQAA)
@@ -11,6 +11,14 @@ Screening Tasks for Quantum open source foundation Cohort 9
 - [Results](#results)
 - [References](#references)
 
+## Task-Description
+
+## Maximum-Independent-Set-Problem
+
+## Gate-based-QAOA
+## VQAA
+## Bloqade
+## Results
 
 
 ## References
