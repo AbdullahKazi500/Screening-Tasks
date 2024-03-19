@@ -69,6 +69,7 @@ solve_mis_qaoa_piecewise_linear function applies QAOA with smoothed piecewise li
 ![image](https://github.com/AbdullahKazi500/Screening-Tasks/assets/75779966/d180a774-50ba-43e4-b34c-ac2985618a93)
 ![image](https://github.com/AbdullahKazi500/Screening-Tasks/assets/75779966/d42bd24e-3742-47e7-b479-49c769860290)
 ![image](https://github.com/AbdullahKazi500/Screening-Tasks/assets/75779966/400b8124-7ebb-4417-ab18-a759919a8490)
+![image](https://github.com/AbdullahKazi500/Screening-Tasks/assets/75779966/e7ebd600-7201-4335-b137-089f5da18126)
 
 ## Results
 
