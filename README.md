@@ -102,6 +102,40 @@ For larger problem sizes or instances with complex energy landscapes, Adiabatic 
 On the other hand, if the focus is on using existing gate-based quantum hardware or leveraging the flexibility of the QAOA framework, then gate-based QAOA may be preferred.
 ## Additional Task
 Done task 3 as well
+the notebook can be found here [error mitigation ZNE](https://github.com/AbdullahKazi500/Screening-Tasks/blob/main/Errormitigationfinal.ipynb)
+Evaluating Error Mitigation Strategies for Ground State Calculation of H2 Molecule
+
+This project focuses on investigating various methodologies to determine the ground state of the H2 molecule, each with its own set of advantages and limitations. The methodologies explored primarily involve considering single and double excitations. Some of the approaches employed simplify the model significantly but may sacrifice chemical accuracy, while others leverage error mitigation techniques more efficiently, particularly through Qiskit runtime, which complements hybrid algorithms like VQE.
+
+we also look into Various error mitigation techniques like Zero noise extrpolation and it's variants to study the energy landscape curve and to observe the Mitigated and unmitigated error results
+
+For this project, the following modules are required: Qiskit and Pennylane for conducting quantum simulations, PySCF as an open-source library containing electronic structure modules, as well as Mitiq from Unitary fund and other Visualization and plotting packages . we have a funchun named ansatz that returns a parametrized quantum corccuit. This circuit is commonly used in variational quantum algorithms for quantum chemistry simulations.
+
+The function takes a single parameter theta, which is a floating-point value representing the variational parameter of the circuit.
+
+Inside the function, a quantum register qreg consisting of two qubits is initialized using cirq.LineQubit.range(2). This creates a list of two qubits labeled as [0, 1].
+
+The function then constructs a Cirq quantum circuit using the initialized qubits and a series of quantum gates This ansatz circuit introduces entanglement between the qubits through the CNOT gates and applies single-qubit rotations parameterized by theta. This parameter can be optimized to minimize the energy of the quantum system, typically using variational algorithms like the Variational Quantum Eigensolver (VQE).we defineoe two quantum circuits We define the variable num_qubits to specify the number of qubits in the quantum circuits. In this case, it's set to 2.
+
+The entangled_circuit function defines a simple entangled circuit consisting of a Hadamard gate applied to the first qubit (Hadamard(wires=0)) followed by a controlled-NOT (CNOT) gate acting on both qubits (CNOT(wires=[0, 1])). The expectation value of the Pauli-Z operator on the first qubit is returned as the circuit output. The random_circuit function constructs a depth-3 random circuit. It iterates over each qubit and applies a Rot gate with randomly generated parameters (Rot(*params[i], wires=i)). After that, a series of gates including CNOT and additional Rot gates are applied in a structured manner. Finally, the expectation value of the Pauli-X operator on a randomly selected qubit is returned as the output. We define the observable for noiseless circuit execution. For the entangled circuit, we measure the expectation value of the tensor product of Pauli-Z operators acting on both qubits (qml.PauliZ(0) @ qml.PauliZ(1)). For the random circuit, we randomly select one qubit and measure the expectation value of the Pauli-X operator on that qubit (qml.PauliX(random.randint(0, num_qubits-1))).
+
+We specify the number of layers for the random circuit, set here to 3.
+
+We initialize the device using PennyLane's default qubit simulator (qml.device("default.qubit", wires=num_qubits)).
+
+We define a function create_random_circuit to generate the random circuit. Inside this function, we construct the circuit by iterating over the specified number of layers and applying randomly generated parameterized gates. we compute and visualize energy landscapes of a quantum system under different noise levels, both with and without error mitigation using Zero-Noise Extrapolation (ZNE).
+
+Energy Funcchun (energy)
+
+This function computes the energy of a quantum circuit (ansatz) at a given bond length (radius) using a Hamiltonian defined by hamiltonians[radius_index]. It employs the mitiq.Executor to evaluate the expectation value of the Hamiltonian using compute_density_matrix. The noise model function cirq.depolarize and noise level (depo_noise_strength,) are passed as keyword arguments (kwargs) to the Executor. Ansatz Funchunn (ansatz)
+
+This function returns a parameterized quantum circuit (cirq.Circuit) associated with the input variational parameter theta. The circuit applies a series of quantum gates (X, RY, RX, CNOT, RZ) to two qubits. Noise Levels and Variational Parameters
+
+we Define the noise levels pvals and variational parameters thetas. pvals: Tuple containing noise levels (depolarizing noise strength). thetas: Array of variational parameters ranging from 0 to 2 * np.pi.
+
+For each noise level (pval), we compute the energies of the quantum circuits for different thetas using the energy function. Store the computed energies in all_energies.
+
+we Apply Zero-Noise Extrapolation (ZNE) to mitigate the effects of noise on the computed energies. Using the mitiq.zne.execute_with_zne function to execute the quantum circuits with error mitigation. Store the mitigated energies in all_mitigated. in the endd we Plot the unmitigated and mitigated energy landscapes side by side. In the first subplot (Unmitigated), plot the energy landscapes for different noise levels without error mitigation. In the second subplot (Mitigated with ZNE), plot the energy landscapes with error mitigation using ZNE. The plots show how the energy landscapes change with varying noise levels and the effectiveness of error mitigation. 
 ![image](https://github.com/AbdullahKazi500/Screening-Tasks/assets/75779966/c8781d6e-63a3-416b-970c-f79ba0819ac6)
 ![image](https://github.com/AbdullahKazi500/Screening-Tasks/assets/75779966/e8d82890-7bdb-4647-838f-360c23d488e6)
 
