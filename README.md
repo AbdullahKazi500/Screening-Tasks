@@ -23,6 +23,15 @@ The Maximum Independent Set (MIS) problem in graph theory is the task of finding
 
 ## Gate-based-QAOA
 Gate based QAOA Gate-based Quantum Approximate Optimization Algorithm (QAOA) is a quantum algorithm designed for solving combinatorial optimization problems. These are problems where the goal is to find the best solution from a finite set of possible solutions. Examples include the Traveling Salesman Problem, Maximum Cut, and the Maximum Independent Set Problem. QAOA Objective Function Gate-based QAOA aims to minimize or maximize an objective function that represents the optimization problem. The objective function maps candidate solutions to real numbers, with the optimal solution corresponding to the minimum or maximum value.
+Here we have used the [Classiq SDK](https://www.classiq.io/) To Calculate the Maximum independent set using Gate based QAOA Gate-based Quantum Approximate Optimization Algorithm (QAOA) is a quantum algorithm designed for solving combinatorial optimization problems we define a mathematical optimization model using the Pyomo library for the Maximum Independent Set (MIS) problem. The MIS problem aims to find the largest possible subset of vertices in a graph such that no two vertices in the subset are adjacent (i.e., connected by an edge).we code a script that utilizes the Classiq library to find the Maximum Independent Set (MIS) for randomly generated graphs of different sizes. We import the necessary libraries including NetworkX for graph operations, NumPy for numerical computations, Pyomo for modeling optimization problems, and various components from the Classiq library for quantum optimization.
+
+The mis function defines a Pyomo ConcreteModel representing the MIS optimization model. It creates a binary variable for each node in the graph, adds constraints to ensure that no two adjacent nodes are both included in the independent set, and defines the objective function to maximize the total number of nodes in the independent set.
+
+The find_mis function iterates over a list of the number of nodes for each graph. For each number of nodes:
+
+It generates a random graph using NetworkX. Defines the MIS Pyomo model for the graph. Constructs the QAOA (Quantum Approximate Optimization Algorithm) optimization model using the Classiq library. Sets execution preferences for quantum backend simulation. Executes the quantum program, synthesizes it, and extracts optimization results. Prints the independent set and its size for the graph. Plots the graph with the independent set highlighted in red. List of Number of Nodes: The num_nodes_list contains the number of nodes for each graph.
+
+Finally, the find_mis function is called with the list of number of nodes to find the MIS for each graph.
 ## VQAA
 ## Bloqade
 ## Results
