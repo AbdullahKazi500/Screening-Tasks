@@ -51,6 +51,7 @@ We ran into issues while using Pulser from Pasqal and while importing the Solver
 ![image](https://github.com/AbdullahKazi500/Screening-Tasks/assets/75779966/0444d8cf-e1d6-4861-9e46-887eaa8b7400)
 
 ## Bloqade adiabatic neutral atoms
+The ipynb Notebook can be found here [Bloqade](https://github.com/AbdullahKazi500/Screening-Tasks/blob/main/qosf2%20(2).ipynb)
 for Solving the MIS Problem we now use Bloqade from Quera
 We install julia through jill and do the necessary imports
 we define four different graphs with a specific number of nodes and edges:
