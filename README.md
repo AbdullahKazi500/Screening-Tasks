@@ -8,7 +8,7 @@ Screening Tasks for Quantum open source foundation Cohort 9
 -  [Gate based QAOA](#Gate-based-QAOA)
   - [Pulser](#Pulser)
   - [Bloqade adiabatic neutral atoms](#Bloqade-adiabatic-neutral-atoms)
-- [Results](#results)
+- [conclusion ](#Conclusion)
 - [References](#references)
 
 ## Task-Description
@@ -71,8 +71,32 @@ solve_mis_qaoa_piecewise_linear function applies QAOA with smoothed piecewise li
 ![image](https://github.com/AbdullahKazi500/Screening-Tasks/assets/75779966/400b8124-7ebb-4417-ab18-a759919a8490)
 ![image](https://github.com/AbdullahKazi500/Screening-Tasks/assets/75779966/e7ebd600-7201-4335-b137-089f5da18126)
 
-## Results
+## Conclusion
+We came to a conclusion that 
+determining which approach is better, whether adiabatic analog-digital quantum (AADQ) or gate-based Quantum Approximate Optimization Algorithm (QAOA), for solving the Maximum Independent Set (MIS) problem depends on various factors such as the problem size, available hardware, noise characteristics, and specific requirements of the application. s:
 
+Adiabatic Analog-Quantum approach:
+
+Pros:
+it offers a potentially more direct mapping of the optimization problem onto the quantum hardware, as it evolves the system slowly from the ground state of an initial Hamiltonian to the ground state of the problem Hamiltonian.
+It may be more suitable for problems with complex energy landscapes, as it evolves smoothly through the energy levels.
+Cons:
+Implementation and calibration of Analog systems can be challenging due to the need for precise control over the time-dependent Hamiltonian.
+Analog may suffer from decoherence and other noise sources during the adiabatic evolution process, which can lead to errors in the final solution.
+Gate-Based Quantum Approximate Optimization Algorithm (QAOA):
+
+Pros:
+QAOA is a versatile algorithm that can be implemented on various quantum computing platforms, including gate-based systems.
+It offers a flexible framework for optimizing combinatorial problems and can be tailored to specific problem instances.
+QAOA may be more suitable for near-term quantum devices with limited qubit connectivity and gate fidelities.
+Cons:
+QAOA typically requires a larger number of quantum gates and circuit depth compared to adiabatic approaches, which can make it more susceptible to noise and hardware limitations.
+Finding optimal QAOA parameters can be challenging, as it involves classical optimization over a large parameter space.
+which is better
+
+For small problem sizes and well-behaved instances of the MIS problem, either approach could be viable, and the choice may depend on factors such as available resources and expertise.
+For larger problem sizes or instances with complex energy landscapes, Adiabatic analog may offer advantages due to its potentially smoother evolution through the solution space.
+On the other hand, if the focus is on using existing gate-based quantum hardware or leveraging the flexibility of the QAOA framework, then gate-based QAOA may be preferred.
 
 ## References
 
