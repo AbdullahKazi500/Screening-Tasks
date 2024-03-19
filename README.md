@@ -22,6 +22,7 @@ The Maximum Independent Set (MIS) problem in graph theory is the task of finding
 ![MISP](https://github.com/AbdullahKazi500/Screening-Tasks/assets/75779966/d1c42ea9-ae25-4720-97ca-dccb378ec5a6)
 
 ## Gate-based-QAOA
+Gate based QAOA Gate-based Quantum Approximate Optimization Algorithm (QAOA) is a quantum algorithm designed for solving combinatorial optimization problems. These are problems where the goal is to find the best solution from a finite set of possible solutions. Examples include the Traveling Salesman Problem, Maximum Cut, and the Maximum Independent Set Problem. QAOA Objective Function Gate-based QAOA aims to minimize or maximize an objective function that represents the optimization problem. The objective function maps candidate solutions to real numbers, with the optimal solution corresponding to the minimum or maximum value.
 ## VQAA
 ## Bloqade
 ## Results
