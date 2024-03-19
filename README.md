@@ -101,8 +101,10 @@ For small problem sizes and well-behaved instances of the MIS problem, either ap
 For larger problem sizes or instances with complex energy landscapes, Adiabatic analog may offer advantages due to its potentially smoother evolution through the solution space.
 On the other hand, if the focus is on using existing gate-based quantum hardware or leveraging the flexibility of the QAOA framework, then gate-based QAOA may be preferred.
 ## Additional Task
-I have task 3 as well
+Done task 3 as well
 ![image](https://github.com/AbdullahKazi500/Screening-Tasks/assets/75779966/c8781d6e-63a3-416b-970c-f79ba0819ac6)
+![image](https://github.com/AbdullahKazi500/Screening-Tasks/assets/75779966/e8d82890-7bdb-4647-838f-360c23d488e6)
+
 
 ## References
 
